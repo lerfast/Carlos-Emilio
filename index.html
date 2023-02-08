@@ -35,16 +35,186 @@
           required />
           <form action=""></form>
       </div>
-      <div class="form-group">
-        <label id="number-label" for="number">Number</label>
-        <input
-        type="number"
-        name="number"
-        class="form-control"
-        placeholder="Enter a number"
-        required/>
       </div>
-    </form>
-   </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current position?</p>
+          <select id="dropdown" name="position" class="form-control" required>
+            <option disabled selected value>Select current position</option>
+            <option value="asistent">Asistent</option>
+            <option value="cleaner">Cleaner</option>
+            <option value="manager">Manager</option>
+            <option value="security">Security</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Microverse to a friend to work with us?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite position in our work place?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="custservice">Customer Service</option>
+            <option value="teacher">Teacher</option>
+            <option value="Managment">Managment</option>
+            <option value="Security">Security</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Better-beneficts"
+              type="checkbox"
+              class="input-checkbox"
+            />Better beneficts</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="More-money"
+              type="checkbox"
+              class="input-checkbox"
+            />More money</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="No-work-weekends"
+              type="checkbox"
+              class="input-checkbox"
+            />No work on weekends</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="3-months-vacations"
+              type="checkbox"
+              class="input-checkbox"
+            />3 months vacations</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Payed-Vacations"
+              type="checkbox"
+              class="input-checkbox"
+            />Payed Vacations with your all nuclear family</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="More-vending"
+              type="checkbox"
+              class="input-checkbox"
+            />More vending machines</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="PS5"
+              type="checkbox"
+              class="input-checkbox"
+            />A PS5 and a XBOX Series X in the resting room</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Free-transportation"
+              type="checkbox"
+              class="input-checkbox"
+            />Free transportation to work from work</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Hours-per-day"
+              type="checkbox"
+              class="input-checkbox"
+            />Have only 6 hours shift per day</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Free-meals"
+              type="checkbox"
+              class="input-checkbox"
+            />Free meals</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Have-car"
+              type="checkbox"
+              class="input-checkbox"
+            />Have a brand new car for your efforts</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions please, tell us?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
